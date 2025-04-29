@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="education-row" [ngClass]="{ 'education-row-last': index === education.length - 1 }">
+    <div>
+      <img class="education-image" [src]="education[index].graduationPhoto" />
+    </div>
+    <div class="education-text">
+      <h3>{{ education[index].studyTitle }}</h3>
+      <small>{{education[index].additionalInfo}}</small>
+      <p>
+        <a [href]="education[index].url" target="_blank">{{
+          education[index].university
+          }}</a>
+
+        <br />
+
+        <small>{{ education[index].years }}</small>
+        <br/>
+        <small>Thesis: {{education[index].thesisTitle}}</small>
+      </p>
+    </div>
+  </div>
+</div>

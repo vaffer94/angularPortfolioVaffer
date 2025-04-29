@@ -1,0 +1,203 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* --color-primary-light: #a8c5cb;
+  --color-primary: #0e5f6e;
+  --color-primary-dark: #073139;
+  --color-primary-dark-a80: rgba(7, 49, 57, 0.8);
+
+  --color-secondary-light: #bdb3ba;
+  --color-secondary: #472b40;
+  --color-secondary-a50: rgba(71, 43, 64, 0.5);
+  --color-secondary-dark: #251621;
+
+  --color-accent: #7cb8fb;
+  --color-highlight: #ffa600;
+  --color-background: #001013;
+  --color-text: white; */
+
+
+   /* --color-primary-light: #213555;         
+   --color-primary: #3E5879;               
+   --color-primary-dark: #5A6D89;          
+   --color-primary-dark-a80: rgba(90, 109, 137, 0.8);
+   
+   --color-secondary-light: #BFA89C;       
+   --color-secondary: #D8C4B6;             
+   --color-secondary-a50: rgba(216, 196, 182, 0.5);
+   --color-secondary-dark: #F5EFE7;        
+   
+   --color-accent: #D8C4B6;                
+   --color-highlight: #F5EFE7;             
+   --color-background: #213555;            
+   --color-text: #F5EFE7;                
+    */
+
+
+--color-primary-light: #9966b3;         /* Lilla sabbia – evidenziazione, badge */
+--color-primary: #030118;               /* Viola medio – pulsanti principali */
+--color-primary-dark: #080223;          /* Viola profondo – hover, enfasi */
+--color-primary-dark-a80: rgba(32, 19, 105, 0.8);
+
+--color-secondary-light: #775798;       /* Lilla grigiastro – tab chiari */
+--color-secondary: #433d8b;             /* Viola medio – tab attivi */
+--color-secondary-a50: rgba(67, 61, 139, 0.5);
+--color-secondary-dark: #17153b;        /* Blu notte – sfondo, header, nav */
+
+--color-accent: #c59bda;                /* Accenti delicati, icone, dettagli */
+--color-highlight: #c8acd6;             /* Highlight tenue – bottoni chiari o badge */
+--color-background: #070625;            /* Sfondo principale scuro e avvolgente */
+--color-text: #f4f0fa;                  /* Testo chiaro – leggibilità perfetta su dark */
+
+
+
+
+  --section: linear-gradient(
+    130deg,
+    var(--color-primary-dark-a80) 0%,
+    var(--color-secondary-a50) 100%* B
+  );
+  --navbar: var(--color-primary-dark);
+  --footer: var(--color-primary-dark);
+  --info: var(--color-primary);
+
+  --text: var(--color-text);
+  --icon: var(--color-primary-dark);
+  --border: var(--color-text);
+  --textTitle: var(--color-accent);
+  --textSubtitle: var(--color-accent);
+  --textChip: var(--color-primary-dark);
+  --textLink: var(--color-accent);
+  --highlight: var(--color-highlight);
+
+  /* --font-family-display: "DM Serif Display", serif; */
+  --font-family-display: "Raleway", sans-serif;;
+  --font-family-heading: "Poetsen One", sans-serif;
+  --font-family-base: "Red Hat Display", sans-serif;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  
+  --font-size-xs: 12px;
+  --font-size-sm: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 22px;
+  --font-size-xl: 30px;
+  --font-size-xxl: 72px;
+
+  --radius-sm: 5px;
+  --radius-md: 20px;
+  --radius-pill: 50%;
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-weight: 300;
+  font-size: var(--font-size-md);
+  line-height: 1.8;
+  color: var(--text);
+}
+
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-heading);
+  font-weight: 500;
+}
+
+h1 {
+  font-family: var(--font-family-display);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+}
+
+h4 {
+  font-size: var(--font-size-md);
+}
+
+ul {
+  list-style-type: square;
+}
+
+a {
+  color: var(--textLink);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--textTitle);
+}
+
+::selection {
+  background-color: var(--highlight);
+  color: var(--color-background);
+}
+
+img {
+  border-radius: var(--radius-sm);
+}
+
+.list-no-margin {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.portfolio-section {
+  margin-top: 30px;
+  padding: 30px 30px 0px 30px;
+  border-radius: var(--radius-md);
+}
+
+.portfolio-section-background {
+  background: var(--section);
+  border: 2px solid var(--border);
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 2px var(--border);
+}
+
+@media (max-width: 768px) {
+  .right-section {
+    margin-right: 0px !important;
+    margin-top: 0px;
+    margin-left: 0px !important;
+    margin-bottom: 30px;
+  }
+
+  .left-section {
+    margin-bottom: 30px;
+  }
+}
+
+.label-strong {
+  font-weight: 800;
+  display: contents;
+}
+
+.big-number {
+  font-family: "impact";
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+.tool-badge {
+  background: radial-gradient(var(--text), var(--textTitle));
+  color: var(--textChip);
+}

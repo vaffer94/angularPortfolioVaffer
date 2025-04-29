@@ -1,0 +1,16 @@
+.footer-background {
+    background-color: var(--footer) !important;
+    margin-top: 90px;
+}
+
+.footer-upperdiv {
+    padding: 10px !important;
+}
+
+.footer-copyright {
+    color: var(--icon);
+}
+
+.footer-text {
+    font-size: 0.85rem;
+}

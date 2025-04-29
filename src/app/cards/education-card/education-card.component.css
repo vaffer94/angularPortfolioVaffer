@@ -1,0 +1,41 @@
+.education-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.education-row-last {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 575.98px) {
+  .education-row {
+    flex-direction: column;
+  }
+
+  .education-image {
+    margin-bottom: 30px;
+    margin-right: 0px !important;
+  }
+
+  .education-text {
+    text-align: center;
+  }
+}
+
+.education-text {
+    line-height: 130%;
+}
+
+.education-image {
+  flex: none;
+  height: 120px;
+  width: 120px;
+  margin-right: 20px;
+  border-radius: var(--radius-pill);
+  border: 3px solid var(--border);
+  position: relative;
+  z-index: 400;
+}

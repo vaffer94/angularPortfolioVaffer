@@ -1,0 +1,230 @@
+<div class="home-cover text-white d-flex align-items-center">
+  <div class="container">
+    <div class="row p-4">
+      <h1 class="header-name">Hello,</h1>
+      <h1 class="header-name">I'm Vania!</h1>
+      <div class="col-12 col-md-4">
+      <span class="intro-text"
+        >Multimedia Engineer by profession, riddle-solver by nature. <br>On a mission to turn tech into portals to the wonderfully weird.</span
+      >
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!--about -->
+  <div class="row justify-content-center">
+    <div class="col">
+      <div class="portfolio-section portfolio-section-background">
+        <div class="row m-0">
+          <div class="col-12 col-lg-4 col-xl-3 page-info-extra">
+            <div class="row">
+              <div class="col-md-5 col-lg-12 page-info-profile">
+                <img
+                  class="img-fluid page-info-picture"
+                  src="/assets/images/profilo_cartoon.png"
+                />
+              </div>
+              <div class="col d-flex align-items-center">
+                <ul class="info-list">
+                  <li class="info-list-job">
+                    Software Engineer
+                  </li>
+                  <li class="info-list-company">
+                    <a href="https://www.exprivia.it/it/" target="_blank"
+                      >Exprivia</a
+                    >
+                  </li>
+                  <li class="info-list-where">Milan (Italy)</li>
+                  <li class="info-list-email">
+                    <a href="mailto:&#118;&#97;&#110;&#105;&#97;&#46;&#102;&#101;&#114;&#114;&#97;&#114;&#105;&#48;&#48;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
+                        &#118;&#97;&#110;&#105;&#97;&#46;&#102;&#101;&#114;&#114;&#97;&#114;&#105;&#48;&#48;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col about-text mb-4">
+            <h2 class="about-text about-title">About Me</h2>
+            <p class="about-text"></p>
+            <p>
+                👓 I'm a creative soul driven by the desire to craft <strong>meaningful experiences through technology </strong>.
+                My passion lies in immersive tech (like VR and AR) because I believe these tools can transform the real world into a dynamic and playful space, blurring the lines between the physical and the digital. This passion led me to study Multimedia Engineering in Padova.
+                <br/>
+                <br/>
+                💡 I'm fascinated by <strong>logic challenges </strong>. I’ve been playing chess since I was a child and have a deep love for intense board game sessions. Passion runs deep in me — I’ve been teaching chess for almost ten years in a competitive club, raising a delightful squad of nerdy, brainy monsters.
+                <br/>
+                <br/>
+                🌱 Outside of immersive experiences, I love experimenting with <strong> IoT and sensory-driven projects </strong> in my free time. My goal is always the same: to make life easier, more fun, and more connected through creativity and automation.
+                How many everyday problems could we solve with just a little bit of curiosity and code?
+                <br/>
+                <br/>
+                🎇 Since I deeply believe in technology as a bridge for human connection, I often volunteer to teach coding principles to kids through games and playful interactions.
+                <br/>
+                <br/>
+                🚀 Let’s have fun and reach out if you have an exciting idea or initiative. I’m always up for building something weird and wonderful together.
+            </p>
+            <p style="text-align: right;">
+                ✨<i> <strong>
+                Play is the highest form of research
+            </strong></i> - Albert Einstein
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8 col-12">
+      <!--education -->
+      <div class="row justify-content-center">
+        <div class="col left-section">
+          <div class="portfolio-section portfolio-section-background">
+            <app-page-section sectionTitle="Education">
+              <div
+                class="education-timeline"
+                *ngFor="let e of education; index as i"
+              >
+                <app-education-card [index]="i"></app-education-card>
+              </div>
+            </app-page-section>
+          </div>
+        </div>
+      </div>
+
+      <!--experience -->
+      <div class="row justify-content-center">
+        <div class="col left-section">
+          <div class="portfolio-section portfolio-section-background">
+            <app-page-section sectionTitle="Experience">
+              <div *ngFor="let e of experience; index as i">
+                <app-experience-card [index]="i"></app-experience-card>
+              </div>
+            </app-page-section>
+          </div>
+        </div>
+      </div>
+
+
+      
+        <!--Volunteer activities -->
+        <!-- <div class="row justify-content-center">
+        <div class="col left-section">
+            <div class="portfolio-section portfolio-section-background">
+            <app-page-section sectionTitle="Volunteer activities">
+                <div *ngFor="let e of experience; index as i">
+                <app-experience-card [index]="i"></app-experience-card>
+                </div>
+            </app-page-section>
+            </div>
+        </div>
+        </div>
+    </div> -->
+
+
+    <div class="col">
+      <!--skills -->
+      <div class="row justify-content-center">
+        <div class="col right-section">
+          <div class="portfolio-section portfolio-section-background">
+            <app-page-section sectionTitle="Skills">
+              <div
+                class="skill-row"
+                *ngFor="let s of skills; index as i"
+                [ngClass]="{ 'skill-row-last': i === skills.length - 1 }"
+              >
+                <h4>{{ s.category }}</h4>
+                <app-skill-card [i]="i"></app-skill-card>
+              </div>
+            </app-page-section>
+          </div>
+        </div>
+      </div>
+
+      <!--language-->
+      <div class="row justify-content-center">
+        <div class="col right-section">
+          <div class="portfolio-section portfolio-section-background">
+            <app-page-section
+              sectionTitle="Languages"
+              sectionSubsubtitle="My mother tongue is"
+            >
+              <app-language-card
+                class="language-card"
+                imagePath="assets/images/languages/italian.png"
+                description="Italian"
+              ></app-language-card>
+            </app-page-section>
+
+            <app-page-section
+              sectionSubsubtitle="Other:"
+            >
+              <app-language-card
+                class="language-card"
+                imagePath="assets/images/languages/english.png"
+                description="I have worked in English speaking environments for almost 3 years"
+              ></app-language-card>
+            </app-page-section>
+          </div>
+        </div>
+      </div>
+
+      <!--hobby -->
+      <div class="row justify-content-center">
+        <div class="col right-section">
+          <div class="portfolio-section portfolio-section-background">
+            <app-page-section
+              sectionTitle="Hobbies"
+            >
+              <div class="row row-cols-3 row-cols-lg-2">
+                <app-hobby-card
+                  imagePath="assets/images/hobbies/BoardGame.png"
+                  description="Board game"
+                ></app-hobby-card>
+                <app-hobby-card
+                  imagePath="assets/images/hobbies/Chess.png"
+                  description="Chess"
+                ></app-hobby-card>
+                <app-hobby-card
+                  imagePath="assets/images/hobbies/Gymnast.png"
+                  description="Artistic gymnastics"
+                ></app-hobby-card>
+                <app-hobby-card
+                  imagePath="assets/images/hobbies/Beer.png"
+                  description="Belgian Beers"
+                ></app-hobby-card>
+              </div>
+            </app-page-section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  id="projects"
+  class="projects-cover text-white d-flex align-items-center mt-4 mb-4"
+>
+  <div class="container p-4">
+    <h1>Check out some of my work!</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div
+    class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4"
+    style="margin-top: 10px; margin-bottom: 50px"
+  >
+    <!-- <div *ngFor="let cover of coverProjects; index as i"> -->
+      <div class="col">
+        <!-- <app-project-card [index]="i"></app-project-card> -->
+         <p> ... work in progress!...</p>
+         <p>In the meantime, I may have applied for a position at your company: give me a chance — I promise I'll show you my amazing projects!</p>
+      </div>
+    <!-- </div> -->
+  </div>
+</div>

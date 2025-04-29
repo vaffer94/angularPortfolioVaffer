@@ -1,0 +1,37 @@
+.experience-card {
+    margin-bottom: 10px;
+}
+
+.experience-title {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.experience-icon {
+    flex: none;
+    height: 60px;
+    width: 60px;
+
+    background-color: white;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    margin-right: 15px;
+
+    object-fit: cover;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: var(--radius-sm);
+    padding: 5px;
+  }
+
+@media (max-width: 575.98px) { 
+    .experience-icon {
+        margin-bottom: 15px;
+    }
+
+    .experience-title {
+        display: unset;
+    }
+}

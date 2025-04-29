@@ -1,0 +1,7 @@
+.skill-card {
+    background-color: var(--info);
+}
+
+.skill-progress {
+    background-color: var(--textLink);
+}
