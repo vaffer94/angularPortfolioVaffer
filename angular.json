@@ -35,7 +35,9 @@
             ]
           },
           "configurations": {
-            "production": {
+              "production": {
+                "baseHref": "/angularPortfolioVaffer/",
+                "outputPath": "docs",
               "budgets": [
                 {
                   "type": "initial",
@@ -51,8 +53,6 @@
               "outputHashing": "all"
             },
             "development": {
-              "baseHref": "/angularPortfolioVaffer/",
-              "outputPath": "docs",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
