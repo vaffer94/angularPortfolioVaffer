@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/vaniaferrari-portfolio",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -51,6 +51,8 @@
               "outputHashing": "all"
             },
             "development": {
+              "baseHref": "/angularPortfolioVaffer/",
+              "outputPath": "docs",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
