@@ -4,8 +4,6 @@
 /tmp
 /out-tsc
 /bazel-out
-/docs
-/src
 
 # Node
 /node_modules
