@@ -60,21 +60,21 @@ export class ProjectCardComponent {
         {
             title: 'Orietta is you!',
             description: 'AR filter to transform yourself into the team mascot! Want to be part of the Orietta team? Try to see how you would look with her style!',
-            cover: '../../assets/images/project-covers/oriettaIsYou.png',
+            cover: 'assets/images/project-covers/oriettaIsYou.png',
             link: 'wait-for-more',
             keywords: ['AR', 'Gamification', 'User involvement', 'Computer Vision'],
         },
         {
             title: 'Eat Boat',
             description: 'Can you eat the right boats and avoid the rest? Find out what your record is.',
-            cover: '../../assets/images/project-covers/barca.png',
+            cover: 'assets/images/project-covers/barca.png',
             link: 'wait-for-more',
             keywords: ['AR', 'Gamification', 'User involvement', 'Computer Vision'],
         },
         {
             title: 'Wambling Quiz',
             description: 'Do you know them all? Answer...using your head!',
-            cover: '../../assets/images/project-covers/quiz.png',
+            cover: 'assets/images/project-covers/quiz.png',
             link: 'wait-for-more',
             keywords: ['AR', 'Gamification', 'User involvement', 'Computer Vision'],
         },
@@ -82,7 +82,7 @@ export class ProjectCardComponent {
             title: 'Racoomba!',
             description:
                 'Development of a Unity game about 3 racoons who have to scrape items from a house, taking care to avoid the Roomba killers',
-            cover: "../../assets/images/project-covers/Cover Racoomba.png",
+            cover: "assets/images/project-covers/Cover Racoomba.png",
             video: this.getSafeVideoUrl('https://www.youtube.com/embed/3uZRMXiv-Rw?rel=0'),
             link: 'wait-for-more',
             keywords: ['Unity', 'C#', '3D Modelling', 'Game Design'],
