@@ -33,13 +33,15 @@ export class SkillsService {
       ]
     },
     {
-      category: "Design&UX tools and methods",
+        category: "Tools and More",
       content: [
+        { name: "Git", percentage: "90%", },
         { name: "Figma", percentage: "90%", },
         { name: "Canva", percentage: "70%", },
         { name: "UX resarch", percentage: "70%", },
         { name: "Design thinking", percentage: "70%", },
         { name: "Accessibility", percentage: "70%", },
+        { name: "Agile", percentage: "70%", },
       ]
     },
   ]

@@ -28,6 +28,7 @@ import { LanguageCardComponent } from './cards/language-card/language-card.compo
 import { RacoombaComponent } from './projects/racoomba/racoomba.component';
 import { EspooraComponent } from './projects/espoora/espoora.component';
 import { BackgroundComponent } from './layout/background/background.component';
+import { WaitForMoreComponent } from './projects/wait-for-more/wait-for-more.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { BackgroundComponent } from './layout/background/background.component';
     RacoombaComponent,
     EspooraComponent,
     BackgroundComponent,
+    WaitForMoreComponent,
   ],
   imports: [
     BrowserModule,
