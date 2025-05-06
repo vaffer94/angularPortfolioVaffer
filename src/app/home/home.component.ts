@@ -12,6 +12,14 @@ import { SkillsService } from '../services/skills.service';
 export class HomeComponent {
     coverProjects = [
         'assets/images/project-covers/oriettaIsYou.png',
+        'assets/images/project-covers/oriettaIsYou.png',
+        'assets/images/project-covers/oriettaIsYou.png',
+        'assets/images/project-covers/oriettaIsYou.png',
+        'assets/images/project-covers/oriettaIsYou.png',
+        'assets/images/project-covers/oriettaIsYou.png',
+        'assets/images/project-covers/oriettaIsYou.png',
+        'assets/images/project-covers/oriettaIsYou.png',
+        'assets/images/project-covers/oriettaIsYou.png',
   ]
     // export class HomeComponent {
     //   coverProjects = [

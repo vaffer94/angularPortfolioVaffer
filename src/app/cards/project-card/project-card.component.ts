@@ -14,12 +14,69 @@ export class ProjectCardComponent {
   @ViewChild('imageCover') imageCover!: ElementRef<HTMLIFrameElement>;
 
     projects = [
-    {
+
+        {
+            title: 'Mushroom relax',
+            description: 'Want some relaxation or a crazy adventure? Come pick mushrooms in VR while we monitor your parameters with a wearable device.',
+            cover: '../assets/images/project-covers/mushroom.png',
+            link: 'wait-for-more',
+            keywords: ['VR', 'Gamification', 'Sensors', 'UX'],
+        },
+        {
+            title: 'Bubble it!',
+            description: 'Can you hit the right target? A VR game with levels to test your attention with increasing distractions.',
+            cover: '../assets/images/project-covers/shoot.png',
+            link: 'wait-for-more',
+            keywords: ['VR', 'Rehabilitation', 'Attention mechanism', 'Gamification', 'UX'],
+        },
+        {
+            title: 'Synch experience',
+            description: 'POC that transmits the coordinates of the scene displayed in the web app to the twin scene displayed in VR, and adapts the displayed sections.',
+            cover: '../assets/images/project-covers/synch.png',
+            link: 'wait-for-more',
+            keywords: ['VR', 'web communication', 'UX'],
+        },
+        {
+            title: 'Do you remember..?',
+            description: 'Do you always have so many ideas, and then when it comes to choosing what to do you don\'t remember them? Track all your adventures and find them conveniently.',
+            cover: '../assets/images/project-covers/doYouRemember.png',
+            link: 'wait-for-more',
+            keywords: ['Mobile app', 'POC', 'Automation', 'Rapid Prototyping', 'UX'],
+        },
+        {
+            title: 'Catch it!',
+            description: 'Mobile game with levels to test your attention. Can you catch all the apples without getting distracted? Be careful not to be greedy!',
+            cover: '../assets/images/project-covers/gameAttention.png',
+            link: 'wait-for-more',
+            keywords: ['Mobile Game', 'Attention mechanism', 'Gamification', 'UX'],
+        },
+        {
+            title: 'Smart home',
+            description: 'Alexa not enough for you? Create a sensor station to monitor your room, and view a dashboard with the trend of the values ​​on your phone.',
+            cover: '../assets/images/project-covers/iot.png',
+            link: 'wait-for-more',
+            keywords: ['Sensors', 'Automation', 'IoT'],
+        },
+        {
             title: 'Orietta is you!',
-            description: 'Filtro AR per trasformarsi nella mascotte del team! Vuoi far parte del team Orietta? Prova a vedere come saresti con il suo stile!',
+            description: 'AR filter to transform yourself into the team mascot! Want to be part of the Orietta team? Try to see how you would look with her style!',
             cover: '../assets/images/project-covers/oriettaIsYou.png',
             link: 'wait-for-more',
-            keywords: ['AR', 'User involvement', 'Computer Vision', 'Gamification'],
+            keywords: ['AR', 'Gamification', 'User involvement', 'Computer Vision'],
+        },
+        {
+            title: 'Eat Boat',
+            description: 'Can you eat the right boats and avoid the rest? Find out what your record is.',
+            cover: '../assets/images/project-covers/barca.png',
+            link: 'wait-for-more',
+            keywords: ['AR', 'Gamification', 'User involvement', 'Computer Vision'],
+        },
+        {
+            title: 'Wambling Quiz',
+            description: 'Do you know them all? Answer...using your head!',
+            cover: '../assets/images/project-covers/quiz.png',
+            link: 'wait-for-more',
+            keywords: ['AR', 'Gamification', 'User involvement', 'Computer Vision'],
         },
         {
             title: 'Racoomba!',
@@ -31,8 +88,15 @@ export class ProjectCardComponent {
             keywords: ['Unity', 'C#', '3D Modelling', 'Game Design'],
         },
     ];
-
-
+    // qualcosa con Arduino --> Naturalmente Smart?
+    // qualcosa con Technovation
+    // qualcosa con AI --> AI agent?
+    // qualcosa con UX research --> ?
+    // qualcosa con POC
+    // qualcosa con mobile
+    // qualcosa con computer vision --> corso AI?
+    // qualcosa con analisi dei dati --> API fitbit?
+    // qualcosa con Alexa e arduino?
 
     //   projects = [
     // {
