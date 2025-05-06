@@ -18,7 +18,7 @@ export class ProjectCardComponent {
             title: 'Orietta is you!',
             description: 'Filtro AR per trasformarsi nella mascotte del team! Vuoi far parte del team Orietta? Prova a vedere come saresti con il suo stile!',
             cover: '../assets/images/project-covers/oriettaIsYou.png',
-            link: 'orietta-is-you',
+            link: 'wait-for-more',
             keywords: ['AR', 'User involvement', 'Computer Vision', 'Gamification'],
         },
         {
@@ -27,7 +27,7 @@ export class ProjectCardComponent {
                 'Development of a Unity game about 3 racoons who have to scrape items from a house, taking care to avoid the Roomba killers',
             cover: "../../assets/images/project-covers/Cover Racoomba.png",
             video: this.getSafeVideoUrl('https://www.youtube.com/embed/3uZRMXiv-Rw?rel=0'),
-            link: 'racoomba',
+            link: 'wait-for-more',
             keywords: ['Unity', 'C#', '3D Modelling', 'Game Design'],
         },
     ];
