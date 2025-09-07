@@ -12,7 +12,6 @@ import { BookflixComponent } from './projects/bookflix/bookflix.component';
 import { RacoombaComponent } from './projects/racoomba/racoomba.component';
 import { EspooraComponent } from './projects/espoora/espoora.component';
 import { WaitForMoreComponent } from './projects/wait-for-more/wait-for-more.component';
-import { ProvaVFComponent } from './projects/prova-vf/prova-vf.component';
 import { WamblingQuizComponent } from './projects/wambling-quiz/wambling-quiz.component';
 import { EatBoatComponent } from './projects/eat-boat/eat-boat.component';
 import { OriettaComponent } from './projects/orietta/orietta.component';
@@ -34,7 +33,6 @@ const routes: Routes = [
   {path: 'racoomba', component: RacoombaComponent},
   {path: 'espoora', component: EspooraComponent},
   { path: 'wait-for-more', component: WaitForMoreComponent },
-  { path: 'projects/provaVF', component: ProvaVFComponent },
   { path: 'projects/wamblingQuiz', component: WamblingQuizComponent },
   { path: 'projects/eatBoat', component: EatBoatComponent },
   { path: 'projects/orietta', component: OriettaComponent },

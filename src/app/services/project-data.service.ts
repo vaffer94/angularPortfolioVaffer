@@ -7,19 +7,6 @@ import { Project } from '../model/project.model';
 export class ProjectDataService {
 
   private projects: Project[] = [
-    {
-      title: 'ProvaVF',
-      image: 'assets/images/Projects/bookflix/coding-01.jpg',
-      description: 'An app to discover and share books with friends.',
-      technologies: ['Angular', 'Firebase', 'SCSS'],
-      devices: ['Web', 'Mobile'],
-      youtubeUrl: 'https://youtu.be/SmuTF_H3mjo',
-      githubUrl: 'https://github.com/vaffer94',
-      highlights: ['Dark mode', 'User-friendly interface'],
-      problem: 'People often struggle to find books recommended by friends.',
-      process: 'Wireframes > Prototyping > Development > Testing',
-      improvements: 'Add search functionality, improve mobile responsiveness'
-    },
       {
       title: 'Mushroom Relax',
       image: '',
