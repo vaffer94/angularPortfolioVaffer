@@ -1,5 +1,6 @@
 .experience-card {
     margin-bottom: 10px;
+    white-space: pre-line;
 }
 
 .experience-title {

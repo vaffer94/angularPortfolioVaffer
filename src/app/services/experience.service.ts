@@ -13,7 +13,7 @@ export class ExperienceService {
         url: "https://exprivia.it/",
         period: "Apr 2024 - current",
         location: "Milan, Italy",
-        description: ""
+        description: "I’m a Software Engineer and Functional Analyst working on healthcare projects, where I translate doctors’ needs into technical requirements and implement solutions using Angular. Acting as a bridge between medical staff and developers, I ensure both sides stay aligned.\n\nI also developed a VR Proof of Concept for visualizing 3D medical image reconstructions, synchronized in real time with a web-based platform to support collaborative examination. \n\nCurrently, I’m working as an AI Engineer, integrating machine learning algorithms into user-facing applications to deliver smarter and more intuitive experiences."
       },
 
     {
