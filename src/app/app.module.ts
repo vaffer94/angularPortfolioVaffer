@@ -29,6 +29,14 @@ import { RacoombaComponent } from './projects/racoomba/racoomba.component';
 import { EspooraComponent } from './projects/espoora/espoora.component';
 import { BackgroundComponent } from './layout/background/background.component';
 import { WaitForMoreComponent } from './projects/wait-for-more/wait-for-more.component';
+import { ProjectDetailComponent } from './component/project-detail/project-detail.component';
+import { ProvaVFComponent } from './projects/prova-vf/prova-vf.component';
+import { WamblingQuizComponent } from './projects/wambling-quiz/wambling-quiz.component';
+import { EatBoatComponent } from './projects/eat-boat/eat-boat.component';
+import { OriettaComponent } from './projects/orietta/orietta.component';
+import { CatchItComponent } from './projects/catch-it/catch-it.component';
+import { MushroomRelaxComponent } from './projects/mushroom-relax/mushroom-relax.component';
+import { BubbleItComponent } from './projects/bubble-it/bubble-it.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +66,14 @@ import { WaitForMoreComponent } from './projects/wait-for-more/wait-for-more.com
     EspooraComponent,
     BackgroundComponent,
     WaitForMoreComponent,
+    ProjectDetailComponent,
+    ProvaVFComponent,
+    WamblingQuizComponent,
+    EatBoatComponent,
+    OriettaComponent,
+    CatchItComponent,
+    MushroomRelaxComponent,
+    BubbleItComponent,
   ],
   imports: [
     BrowserModule,

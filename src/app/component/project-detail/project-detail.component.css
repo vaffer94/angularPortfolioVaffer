@@ -1,0 +1,46 @@
+.project-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.project-links a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.project-description {
+  white-space: pre-line;
+}
+
+.youtube-player {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.youtube-player iframe {
+  border-radius: 10px;
+  max-width: 100%;
+  
+}
+
+.project-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 30px 0;
+
+  font-family: 'Poppins', sans-serif;  /* modern rounded font */
+  letter-spacing: 1px;
+
+  background: linear-gradient(90deg, #965bfd, #750c82); /* gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

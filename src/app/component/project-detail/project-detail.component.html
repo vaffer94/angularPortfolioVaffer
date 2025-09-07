@@ -1,0 +1,70 @@
+<div class="project-container">
+  <h1>{{ project.title }}</h1>
+
+  <img *ngIf="project.image" [src]="project.image" [alt]="project.title" class="project-image" />
+
+   <div class="project-links">
+    <h3 *ngIf="project.youtubeUrl || project.githubUrl">Links</h3>
+
+    <p *ngIf="project.githubUrl">
+      <i class="fab fa-github"></i>
+        <strong> GitHub: </strong>
+        <a [href]="project.githubUrl" target="_blank"> Link </a>
+    </p>
+
+    <p *ngIf="project.youtubeUrl">
+      <i class="fab fa-youtube"></i>
+        <strong> YouTube: </strong>
+        <a [href]="project.youtubeUrl" target="_blank"> Link </a>
+    </p>
+
+    <div *ngIf="project.youtubeUrl" class="youtube-player">
+      <iframe
+        width="560"
+        height="315"
+        [src]="getYoutubeEmbedUrl(project.youtubeUrl)"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+    </div>
+
+  <div *ngIf="project.highlights?.length">
+      <h3>Highlights</h3>
+      <ul>
+        <li *ngFor="let point of project.highlights">{{ point }}</li>
+      </ul>
+    </div>
+
+    <h3>Used technologies</h3>
+    <ul>
+      <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+    </ul>
+
+    <p *ngIf="project.devices?.length">
+      <strong>Devices:</strong> {{ project.devices }}
+    </p>
+
+  <div class="project-description">
+    <h2>Brief description</h2>
+    <p>{{ project.description }}</p>
+
+
+
+    <section *ngIf="project.problem">
+      <h2>The Problem</h2>
+      <p>{{ project.problem }}</p>
+    </section>
+
+    <section *ngIf="project.process">
+      <h2>Process</h2>
+      <p>{{ project.process }}</p>
+    </section>
+
+    <section *ngIf="project.improvements">
+      <h2>Future Improvements</h2>
+      <p>{{ project.improvements }}</p>
+    </section>
+  </div>
+
+</div>
